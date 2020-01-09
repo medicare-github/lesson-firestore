@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    </head>
+    <body>
+
+        <h1>firestore lesson</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form">
+                <input type="text" name="name" placeholder="name study">
+                <input type="text" name="content" placeholder="Content Study">
+                <button>add</button>
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+              apiKey: "AIzaSyBqhz6aeSSWJ8ohgLd5t686eHQB538y45g",
+              authDomain: "lessonfirestore.firebaseapp.com",
+              databaseURL: "https://lessonfirestore.firebaseio.com",
+              projectId: "lessonfirestore",
+              storageBucket: "lessonfirestore.appspot.com",
+              messagingSenderId: "894375239450",
+              appId: "1:894375239450:web:3a1fa5e2b1e4a20e9196a3"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const db=firebase.firestore();
+            // const db = firebase.firestore();
+            // db.settings({ timestampsInSnapshots: true });
+            // const settings = {timestampsInSnapshots: true};
+            // db.firestore.settings(settings); 
+          </script>
+        <script src="app.js"></script>
+    </body>
+</html>
